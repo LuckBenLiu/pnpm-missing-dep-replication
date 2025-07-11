@@ -1,0 +1,19 @@
+{
+  "name": "some-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:install": "cypress install",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --browser electron --headless --spec=cypress/e2e/**/*.ts"
+  },
+  "devDependencies": {
+    "cypress": "14.4.1",
+    "skuba": "11.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1"
+}
