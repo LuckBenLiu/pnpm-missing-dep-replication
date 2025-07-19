@@ -15,6 +15,10 @@ replicate the "missing dep" issue that starts to happen from pnpm@10.12.2
 
 Cypress tests pass as what `pnpm<=10.12.1` does normally.
 
+Technically, the expectation is that the `cypress` package gets access to the `typescript` package by installing `skuba` via default hoisting.
+
 ## Actual:
 
 failed with `Error: You are attempting to run a TypeScript file, but do not have TypeScript installed. Ensure you have 'typescript' installed to enable TypeScript support.`
+
+Seems to indicate the default hoisting is NOT working.
